@@ -1,0 +1,37 @@
+nav{
+position: absolute;
+top: 0px;
+height: 10vh;
+width: 100%;
+
+z-index: 10;
+
+opacity: 0;
+transform: rotate(45deg);
+
+transition: all 1s ease-in-out;
+
+
+}
+
+.rightSide,
+.leftSide{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  
+  
+}
+
+.centerSide{
+ 
+  width:80%;
+}
+
+.textNav{
+  text-shadow: 0px 0px 5px rgba(46, 45, 45, 0.589); 
+  letter-spacing: 2px;
+  
+  display: flex;
+}

@@ -1,0 +1,102 @@
+.text-content1{
+  width: 90vw;
+  height: 90vh;
+  background-color: rgba(0, 0, 0, 0.404);
+  z-index: 15;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+ 
+  transform:translate(-50%,-50%);
+
+  display: flex;
+ flex-direction: column;
+ 
+ border-radius: 5%;
+  
+}
+
+
+@media screen and (max-aspect-ratio: 9/16) {
+  .text-content1{
+    font-size: 1.4em;
+  }
+  
+  h1,
+  h2,
+  h3{
+    margin: 10px;
+  }
+
+
+  
+}
+
+
+
+
+h1{
+  color: wheat;
+  font-family: Noto Serif KR;
+  text-align: center;
+  text-shadow:rgba(34, 19, 168, 0.781) -5px 10px 10px
+}
+
+h2,
+h3{
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.404);
+  color: whitesmoke;
+  font-family:cursive;
+  text-align: center;
+  margin: 10px 5px 10px 5px;
+}
+
+
+
+.realisatorDiv{
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.circleStory{
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100%;
+  height: 80%;
+
+  border: 2px solid wheat;
+  border-radius: 50% 50% 0 0;
+  border-bottom: transparent;
+  
+  
+  
+  
+}
+
+
+.Icons{
+  position: relative;
+  margin-left: 5%;
+
+  border: 4px solid wheat;
+  border-radius: 40% 40% 50% 50%; 
+
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  overflow: hidden;
+  backdrop-filter: blur(4px);
+  transition: transform 0.5s;
+  animation: upHomme 3s alternate infinite ease-in-out;
+}
+
+.Icons img{
+  width: 70%;
+}
+.Icons:hover{
+  transform: scale(1.05);
+}
+

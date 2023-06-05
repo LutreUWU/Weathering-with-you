@@ -1,0 +1,44 @@
+body{
+  margin: 0;
+  
+  padding: 0;
+  
+  overflow-y: overlay;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar{
+  
+  width: 8px;
+  background-color: transparent;
+
+}
+
+body::-webkit-scrollbar-thumb{
+ border-radius: 15px;
+ 
+  background-color: rgb(22, 58, 214);
+}
+p{
+  margin: 0;
+}
+
+.flex{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.hidden{
+  opacity: 0;
+  filter:blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s ease-in-out ;
+}
+
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+  
+}

@@ -1,0 +1,195 @@
+.text-content3{
+  width: 90vw;
+  height: 90vh;
+  background-color: rgba(0, 0, 0, 0.404);
+  z-index: 15;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+ 
+  transform:translate(-50%,-50%);
+  display: grid;
+  grid-template-rows: 10% 18% 18% 18% 18% 18%;
+ border-radius: 5%;
+ 
+}
+
+.musicDiv{
+  background-color: rgba(159, 157, 173, 0.425);
+  border: 2px solid black;
+  height: 90%;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  border-radius: 10%;
+  justify-content: center;
+  margin-left:5% ;
+  margin-right: 5%;
+  
+}
+
+.Name-menu{
+  width: 70%;
+  height: 50%;
+  display: flex;
+  
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgb(221, 217, 217);
+  position: relative;
+  text-align: center;
+ 
+  border-radius: 20px;
+  
+}
+
+.disk-logo{
+  flex-basis: 5%;
+  width: 100%;
+  height: 100%;
+}
+
+.rotate{
+  animation : rotate 2s infinite linear
+}
+
+@keyframes rotate {
+ from {
+  transform: rotate(0);
+ }
+
+ to {
+  transform: rotate(360deg);
+ }
+}
+
+.bandwidth {
+  border: solid 2px lightblue;
+  border-radius: 5%;
+  flex-basis: 30%;
+  width: 100%;
+  height: 35%;
+  position: relative;
+  overflow: hidden;
+  
+}
+
+.song-play{
+ font-family: cursive;
+ position: absolute;
+ color: whitesmoke;
+ text-shadow: 0 5px 20px rgb(16, 28, 201);
+ white-space: nowrap;
+ overflow: hidden;
+ top:50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ 
+ animation: bandwidthAnimation 5s linear infinite; /* Animation du mouvement du texte */
+}
+
+@keyframes bandwidthAnimation {
+ 0% {
+   left:-100%
+ }
+ 100% {
+  left: 200%;
+ }
+}
+
+
+.button{
+  flex-basis: 15%;
+ 
+  background-color: transparent;
+  
+  height: 20%;
+  
+  border-color: transparent transparent transparent #202020;
+  transition: 100ms all ease;
+  
+  cursor: pointer;
+
+  border-style: solid;
+  border-width: 10px 0 10px 15px;
+  
+  
+  
+  
+}
+
+.play {
+  margin-right: 5%;
+  height: 15px;
+  width: 23px;
+  transform: rotate(90deg);
+  border-width: 6px 0px 6px 0px;
+  border-color: #202020 transparent #202020 transparent ;
+}
+
+
+
+
+input {
+  position: absolute;
+  width: 200px;
+  
+  background-color: transparent;
+  
+  appearance: none;
+  
+ 
+  z-index: 100;
+}
+
+input::-webkit-slider-thumb {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  background-color: rgb(74, 39, 231);
+  transform: skewX(10deg);
+  border:2px solid rgb(170, 147, 13);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  
+}
+
+progress{
+ 
+  width: 200px;
+  overflow:hidden;  
+  height: 20px;
+  
+  
+  border: 3px solid goldenrod;
+  transform: skewX(10deg);
+  
+}
+
+progress::-webkit-progress-bar{
+  background-color: #f0f0f0;
+}
+
+progress::-webkit-progress-value{
+  
+  
+  background-color: rgb(10, 19, 146);
+}
+
+.volumeValue{
+  flex-basis: 10%;
+  font-family:cursive;
+  text-align: end;
+  position: absolute;
+  right: 10px;
+}
+
+@media screen and (max-aspect-ratio: 9/16) {
+  .Name-menu{
+    width: 90%;
+  }
+ 
+  .disk-logo{
+    width: 80%;
+    height: 80%;
+  }
+}
