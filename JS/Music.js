@@ -17,6 +17,18 @@ const audioList = [
     artist: "RADWIMPS",
     duration: "6:54"
   },
+  {
+    src: "Music/Music4.mp3",
+    title: "We'll Be Alright",
+    artist: "RADWIMPS",
+    duration: "6:54"
+  },
+  {
+    src: "Music/Music5.mp3",
+    title: "Voice of Wind",
+    artist: "RADWIMPS",
+    duration: "6:54"
+  },
 
 
   // Ajoutez d'autres éléments audio si nécessaire
